@@ -17,8 +17,8 @@
 ## Setup
 
 ```sh
-$ (ssh) git clone https://github.com/Raashot12/gidda.git
-$ cd gidda
+$ (ssh) git clone https://github.com/Raashot12/alpharithm-test.git
+$ cd alpharithm-test
 $ npm cache clean --force
 $ npm install
 # Or, npm install --legacy-peer-deps
