@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://gidda.vercel.app" target="blank">
-    <img src="./public/favicon.svg" width="100" alt="Logo" />
+    <img src="./public/favicon" width="100" alt="Logo" />
   </a>
 </p>
 
