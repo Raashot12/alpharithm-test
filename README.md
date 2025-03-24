@@ -43,7 +43,7 @@ $ npm run cy:open
 |   1 | Alpharithm   | https://gidda.vercel.app                                                                                                                      |
 |   2 | Figma   | https://www.figma.com/design/jXjg4b5DsPMfX8jI4nOUZ4/Frontend-Engineering-Test?node-id=0-1&t=ZHVwPA90tL3aW7Dj-1                              |
 
-## Screenshots
+### Screenshots
 
 ![Home Page](screenshots/alpha-home-page.PNG)
 
