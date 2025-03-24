@@ -10,6 +10,7 @@ const plusJakartaSans = localFont({
 })
 export default function BusinessAISection() {
   const [activeTab, setActiveTab] = useState("Market Prediction")
+  const [selectedTabIndex, setSelectedTabIndex] = useState(0)
 
   return (
     <section className="bg-white relative">
@@ -27,10 +28,13 @@ export default function BusinessAISection() {
 
         <div className="mt-8 w-full max-w-[851px] md:flex justify-center mx-auto overflow-x-auto sm:scrollbar-hidden">
           <div className="flex w-fit gap-4 border border-[#E4E4E7] px-1 py-1 rounded-[12px] flex-nowrap">
-            {categories.map(category => (
+            {categories.map((category, index) => (
               <button
                 key={category.name}
-                onClick={() => setActiveTab(category.name)}
+                onClick={() => {
+                  setSelectedTabIndex(index)
+                  setActiveTab(category.name)
+                }}
                 className={`px-4 py-2 rounded-[8px] text-[16px] font-semibold whitespace-nowrap transition-all flex-shrink-0 ${
                   activeTab === category.name
                     ? "bg-[#03217F] text-white shadow-md"
@@ -43,7 +47,7 @@ export default function BusinessAISection() {
           </div>
         </div>
         <div className="mt-11">
-          <EmblaCarousel />
+          <EmblaCarousel selectedTabIndex={selectedTabIndex} />
         </div>
       </section>
     </section>
